@@ -1,0 +1,22 @@
+{
+  "lookback_days": 45,
+  "max_results_per_query": 20,
+  "max_candidates": 40,
+  "minimum_score": 7,
+  "sources": ["arxiv", "openalex", "crossref"],
+  "queries": [
+    "multimodal retrieval augmented generation",
+    "multimodal RAG agentic",
+    "multimodal search agent",
+    "agentic multimodal retrieval",
+    "universal multimodal retrieval MLLM",
+    "multimodal embedding retrieval benchmark",
+    "visual document retrieval RAG",
+    "visually rich document retrieval",
+    "multimodal browsing agent",
+    "reasoning intensive multimodal retrieval",
+    "provenance aware multimodal search"
+  ],
+  "ignored_identifiers": [],
+  "ignored_titles": []
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="210" viewBox="0 0 1104 210" role="img" aria-labelledby="title desc">
+<title id="title">Framework summary for A Survey of Large Language Model-Based Search Agents</title>
+<desc id="desc">A curator-authored structural summary. It is not a reproduction of the paper figure.</desc>
+<rect width="100%" height="100%" rx="18" fill="#FFFFFF" stroke="#D9E2F0"/>
+<text x="36" y="32" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#17233C">CURATOR-DRAWN FRAMEWORK SUMMARY</text>
+<rect x="36" y="58" width="210" height="116" rx="14" fill="#E8F1FF" stroke="#3976D3" stroke-width="2"/>
+<circle cx="61" cy="83" r="14" fill="#3976D3"/>
+<text x="61" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+<text x="141.0" y="118" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">User information need</text>
+<path d="M 256 116.0 L 298 116.0" stroke="#73819A" stroke-width="3" stroke-linecap="round"/>
+<path d="M 289 109.0 L 298 116.0 L 289 123.0" fill="none" stroke="#73819A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="310" y="58" width="210" height="116" rx="14" fill="#EAF9F0" stroke="#31946B" stroke-width="2"/>
+<circle cx="335" cy="83" r="14" fill="#31946B"/>
+<text x="335" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+<text x="415.0" y="118" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">Agent planning</text>
+<path d="M 530 116.0 L 572 116.0" stroke="#73819A" stroke-width="3" stroke-linecap="round"/>
+<path d="M 563 109.0 L 572 116.0 L 563 123.0" fill="none" stroke="#73819A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="584" y="58" width="210" height="116" rx="14" fill="#FFF4DE" stroke="#D58B18" stroke-width="2"/>
+<circle cx="609" cy="83" r="14" fill="#D58B18"/>
+<text x="609" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+<text x="689.0" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">Tool-based search and</text>
+<text x="689.0" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">retrieval</text>
+<path d="M 804 116.0 L 846 116.0" stroke="#73819A" stroke-width="3" stroke-linecap="round"/>
+<path d="M 837 109.0 L 846 116.0 L 837 123.0" fill="none" stroke="#73819A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="858" y="58" width="210" height="116" rx="14" fill="#F1ECFF" stroke="#7654C4" stroke-width="2"/>
+<circle cx="883" cy="83" r="14" fill="#7654C4"/>
+<text x="883" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+<text x="963.0" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">Reasoning, synthesis and</text>
+<text x="963.0" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#17233C">evaluation</text>
+<text x="36" y="196" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#667085">Structural reading aid by this repository; consult the paper for the authors’ original figure and details.</text>
+</svg>
