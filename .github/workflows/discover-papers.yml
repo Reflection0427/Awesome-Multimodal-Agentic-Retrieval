@@ -36,6 +36,11 @@ jobs:
           python scripts/discover_papers.py
           cat .paper-tracker/report.md >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Validate candidate data and generated collection
+        run: |
+          python scripts/generate_readme.py --check
+          python -m unittest discover -s tests -v
+
       - name: Upload review report
         uses: actions/upload-artifact@v7
         with:

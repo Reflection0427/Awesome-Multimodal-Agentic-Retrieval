@@ -43,6 +43,18 @@ class CollectionTests(unittest.TestCase):
             self.assertTrue(path.exists())
             self.assertEqual(expected, path.read_text(encoding="utf-8"))
 
+    def test_candidate_queue_schema(self):
+        candidates = json.loads((ROOT / "data" / "candidates.json").read_text(encoding="utf-8"))
+        titles = []
+        for candidate in candidates:
+            with self.subTest(candidate=candidate.get("title")):
+                self.assertEqual(candidate["status"], "needs-review")
+                self.assertTrue(candidate["paper_url"].startswith("https://"))
+                self.assertGreaterEqual(candidate["score"], 0)
+                self.assertIn(candidate["suggested_section"], generate_readme.SECTION_ORDER)
+                titles.append(discover_papers.normalize_title(candidate["title"]))
+        self.assertEqual(len(titles), len(set(titles)))
+
     def test_deduplication(self):
         left = discover_papers.Candidate(
             title="Example: Multimodal Retrieval", paper_url="https://arxiv.org/abs/2601.01234",
