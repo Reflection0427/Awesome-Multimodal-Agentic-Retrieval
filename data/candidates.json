@@ -1,1 +1,915 @@
-[]
+[
+  {
+    "title": "Vis-Poison: Poisoning Visual Knowledge in Multimodal Retrieval-Augmented Generation",
+    "paper_url": "https://arxiv.org/abs/2608.20756",
+    "published": "2026-08-21",
+    "authors": [
+      "Rujin Liang",
+      "Zhongpu Chen",
+      "Yuhao Lei",
+      "Xin Miao"
+    ],
+    "abstract": "While multimodal retrieval-augmented generation (RAG) systems increasingly rely on images as external knowledge sources, the introduction of poisoned visual evidence can severely compromise multimodal large language model (MLLM) generation. Unlike prior attacks that rely on altering textual metadata, we introduce Vis-Poison, a novel visual knowledge poisoning attack where the poisoned image itself is the attacker-controlled payload, without manipulating captions, summaries, metadata, or other associated text. Specifically, this attack is instantiated through an automated multi-agent method that constructs visually plausible poisoned images. To assess its impact, we evaluate Vis-Poison across two representative multimodal RAG pipelines, four embedding models, and six generation models. Empirically, Vis-Poison achieves an end-to-end attack success rate of 40.16% to 65.40% against 30k-entry multimodal knowledge bases in \\emph{black-box} settings. Moreover, Vis-Poison remains effective against various MLLMs that can answer correctly from parametric knowledge alone, with an average success rate above 60%. Code and data are available at https://github.com/SWUFE-DB-Group/Vis-Poison.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.20756",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 12,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "agent or planning",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "Bridging the Semantic-Utility Gap in Multimodal RAG via Generator-in-the-Loop Alignment",
+    "paper_url": "https://arxiv.org/abs/2609.08188",
+    "published": "2026-09-08",
+    "authors": [
+      "Zhan-Lun Chang",
+      "Dong-Jun Han",
+      "Seyyedali Hosseinalipour",
+      "Mung Chiang",
+      "Christopher G. Brinton"
+    ],
+    "abstract": "Vision-language models (VLMs) augmented with retrieval-augmented generation (RAG) benefit from access to external evidence. However, standard retrievers and rerankers optimize for semantic similarity rather than answer utility, creating a preference gap: documents that appear relevant may not help the generator produce a correct answer. Motivated by this, we propose a two-stage generator-in-the-loop alignment framework that closes this gap without human document-level relevance annotations. Our framework consists of two stages: in Stage 1, a VLM generates a hypothetical text passage from the image-query pair, which is used as the retrieval query for dense text search, bridging the image-to-text modality gap. In Stage 2, a cross-encoder reranker adapted with low-rank adaptation (LoRA) is fine-tuned using answer-supervised preference pairs mined from the frozen VLM: given the dataset answer label, a candidate document is labeled positive if the VLM produces the correct answer when given that document as context, and negative otherwise. This generator-guided signal is compatible with multiple alignment loss functions, including contrastive (triplet) loss, pairwise direct preference optimization (DPO), and supervised fine-tuning (SFT), and supports periodic re-mining to refresh preference pairs as the reranker improves. Experiments on VQA-X and A-OKVQA with Qwen3.5-2B and Qwen3-VL-4B-Instruct show that our proposed framework consistently outperforms rank-order, random, and REPLUG-style likelihood baselines under various alignment losses and pool size settings, suggesting that answer-level generator feedback is an effective supervision signal for preference alignment.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.08188",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 11,
+    "reasons": [
+      "strong phrase: multimodal rag",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "Less Is More: Graph-free Multimodal RAG via Multi-signal Late Fusion",
+    "paper_url": "https://arxiv.org/abs/2609.19417",
+    "published": "2026-09-16",
+    "authors": [
+      "Tithi Rakshit",
+      "Hongkuan Zhou",
+      "Lavdim Halilaj",
+      "Yuqicheng Zhu"
+    ],
+    "abstract": "Graph-based retrieval-augmented generation (RAG) is widely used for multimodal, cross-document question answering. However, building corpus-level graphs is expensive, slow to query, and difficult to maintain. We present TrioRAG, a graph-free multimodal framework that integrates evidence from three complementary signals: the question, the anchor image, and a VLM-enhanced query generated from both. Each signal retrieves independently over a shared multi-vector index of page text and page images, and the results are combined through late fusion. Further, we introduce AutoQA, a multimodal automotive benchmark whose questions are grounded in noisy, web-sourced images rather than clean document-sourced figures. Its questions require reasoning across manuals. We position it as a model-curated testbed rather than a human-validated gold standard. Across three benchmarks, TrioRAG matches or outperforms graph-based systems while reducing total cost and accelerating per-query inference by 1.6-2.3 times. By construction, AutoQA grounds its questions in out-of-corpus web images. In this setting image retrieval reaches only 19.3% document-level recall, while text-derived signals, especially the VLM-enhanced query, keep retrieval robust.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.19417",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 11,
+    "reasons": [
+      "strong phrase: multimodal rag",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "Self-Reflective VLM with Multimodal Retrieval-Augmented Generation for Long-Context Construction Regulatory Document Comprehension",
+    "paper_url": "https://doi.org/10.1061/jmenea.meeng-7498",
+    "published": "2026-11-01",
+    "authors": [
+      "Shuyi Wang",
+      "Yuguang Fu",
+      "Jinwoo Kim"
+    ],
+    "abstract": "Abstract A deep comprehension of construction regulatory documents is essential for successful construction engineering and management. Although vision–language models (VLMs) hold tremendous potential for achieving human-level understanding, their practical deployment remains constrained by input size limitations. Even when integrated with retrieval-augmented generation (RAG), most efforts process visual elements commonly found in regulatory documents as pure texts and struggle to verify the trustworthiness of the retrieved supporting evidences, increasing vulnerability to hallucination. To address these drawbacks, we present a self-reflective multimodal RAG-assisted VLM pipeline that extends standard VLMs from single-pass document interpretation to multiround retrieval-grounded reasoning. Specifically, it augments existing VLMs with an external multimodal RAG mechanism, moving beyond text-only retrieval by jointly leveraging visual representations and semantic summaries to identify relevant evidence pages. Furthermore, an iterative self-reflection is incorporated to evaluate evidence sufficiency and trigger adaptive question refinement, thus enhancing response reliability. This pipeline was evaluated using a 794 question-answering pairs compiled from 12 divisions of a construction specification, covering three representative question types—information extraction, single-modal reasoning, and multimodal reasoning. Results showed substantial performance gains over traditional, single-model, and multimodal RAG-assisted baselines. More importantly, fine-grained analyses revealed that the proposed pipeline is particularly effective for complex engineering management scenarios—such as interpreting multimodal regulatory requirements, verifying compliance conditions embedded across late-document pages, and synthesizing information from text, tables, and figures. By enabling accurate, context-aware comprehension of lengthy construction regulatory documents without additional model training, the proposed pipeline offers a practical and generalizable tool for engineering management workflows. It has the potential to support compliance verification, reduce interpretation errors, and enhance the timeliness and quality of decision-making in construction management.",
+    "venue": "Journal of Management in Engineering",
+    "doi": "10.1061/jmenea.meeng-7498",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 11,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "LiteSearch-VL: Small Multimodal Search Agents via Trajectory Distillation and Synthetic Step-DPO",
+    "paper_url": "https://arxiv.org/abs/2608.29357",
+    "published": "2026-08-29",
+    "authors": [
+      "Saeed Khaki",
+      "Nima Safaei",
+      "Kamal Ginotra"
+    ],
+    "abstract": "Multimodal search agents answer visual questions by interleaving image understanding, web retrieval, tool use, and evidence synthesis. Strong systems exist, but in two expensive regimes: proprietary frontier models such as GPT-5 and Gemini, or large open vision-language backbones trained with substantial agentic data and reinforcement learning. We ask a different question: when released agent trajectories are distilled into much smaller backbones under a single-node budget, what is actually transferred? We study this with LiteSearch-VL, a low-compute recipe for Qwen3-VL-2B and Qwen3-VL-4B that uses only released OpenSearch-VL trajectories, parameter-efficient LoRA adapters, and synthetic step-level preferences: DPO on GPT-5-generated hard negatives targeting five local failure modes (premature answer, wrong tool, weak query, repeated query, ignored image). Across 12,400 GPT-5-judged rollouts on SimpleVQA, FVQA, LiveVQA, and VDR-Bench-testmini, the dominant effect is behavioral rather than a uniform accuracy lift: full-trajectory supervised fine-tuning transfers the agent contract, taking the 2B model from almost never emitting a usable answer (1,237/1,240 no_answer rollouts) to 28.4% macro Pass@1, matching or slightly exceeding the off-the-shelf 4B base (25.6%). Synthetic preference learning and compact tool distillation act as refinements rather than phase transitions (best 4B configuration: 30.8% macro Pass@1). Finally, a controlled VDR step-budget ablation shows that extra search turns convert abstentions into wrong_entity errors rather than correct answers, identifying answer verification, not search depth, as the next bottleneck for small multimodal agents.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.29357",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: multimodal search agent",
+      "agent or planning",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  },
+  {
+    "title": "MCite-RL: Towards Reliable Multimodal RAG via Citation-enhanced Agentic Reinforcement Learning",
+    "paper_url": "https://arxiv.org/abs/2608.21808",
+    "published": "2026-08-22",
+    "authors": [
+      "Suifeng Zhao",
+      "Zida Liu",
+      "Xinyu Lei",
+      "Lei Sun",
+      "Jun Gao",
+      "Sujian Li"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (RAG) with visual citation is crucial for ensuring the traceability and verifiability of MLLMs. However, current RAG and SFT-based methods struggle to achieve robust cross-modal reasoning, causing imprecise visual citations or decoupling between the citation and the generated answers. To address these limitations, we propose MCite-RL, a citation-enhanced agentic reinforcement learning framework designed for reliable multimodal RAG. MCite-RL introduces an Agentic Refinement module for visual citation that employs iterative retrieval, reasoning, and recursive cropping to progressively narrow the search space, transforming citation into a dynamic, evidence-driven reasoning process rather than a static step. Furthermore, we incorporate a Citation-enhanced Reward mechanism that integrates both process-level and outcome-level feedback within a reinforcement learning paradigm to jointly optimize answer accuracy and source traceability. Extensive experiments on benchmarks such as Wiki-VISA, FinRAGBench-V, and MMLongBench-Doc demonstrate that MCite-RL effectively achieves the joint optimization of citation precision and answer quality.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.21808",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "agent or planning",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  },
+  {
+    "title": "MM-VeriRec: Failure-Guided Fusion for Verifiable Agentic Multimodal Recommendation",
+    "paper_url": "https://arxiv.org/abs/2609.31718",
+    "published": "2026-09-21",
+    "authors": [
+      "Yufeng Wang"
+    ],
+    "abstract": "Images often carry recommendation constraints that text metadata only hints at. A movie may need to look dark, a product may need a minimal style, and a visually impossible request should be rejected. Agentic multimodal recommenders must reason over text-image evidence, decide when visual evidence is decisive, and abstain when no valid action exists. We introduce MM-VeriRec, a verifiable multimodal recommendation protocol and failure-guided fusion method for hidden visual constraints, image-text mismatch, and impossible-task abstention. MM-VeriRec builds tasks from real movie-poster and product-image datasets, verifies each recommendation with deterministic visual attributes, and converts failures into actionable labels: text-trap following, visual ignorance, and false acceptance. Fusion should not merely concatenate modalities, but should diagnose which modality failed and route to the appropriate repair. Across MM-ML 1M and Amazon Reviews datasets, stronger text and vision embeddings improve retrieval but do not remove these failure modes, whereas failure-guided fusion does. The adaptive attribute gate reads the same tags the verifier checks and its scores are verifier-aligned upper bounds testing whether the taxonomy routes to the correct repair. More informative is transfer under a non-aligned gate: an independently derived leave-one-out CLIP detector still reaches 0.7028 and 0.6111 visual-grounded success, above both a VBPR baseline and plain fusion. The text-versus-visual gap reproduces across two LLM families, and the repair that helps differs by domain. MM-VeriRec is both a benchmark and a practical diagnostic loop for trustworthy agentic multimodal recommendation.",
+    "venue": "The 1st International Workshop on Agentic Multimodal Intelligence, co-located with ACM Multimedia 2026",
+    "doi": "10.1145/3841452.3841492",
+    "arxiv_id": "2609.31718",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: agentic multimodal",
+      "agent or planning",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  },
+  {
+    "title": "PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans",
+    "paper_url": "https://arxiv.org/abs/2608.26091",
+    "published": "2026-08-26",
+    "authors": [
+      "Nabaraj Subedi",
+      "Shuvo Dip Datta",
+      "Ahmed Abdelaty",
+      "Shivanand Venkanna Sheshappanavar"
+    ],
+    "abstract": "Civil infrastructure compliance checking has long relied on engineers manually reading legacy 2D plans; however, OCR-based automation strips away the geometry and layout essential for interpreting these plans. We present a Visual-First Multimodal Retrieval-Augmented Generation (RAG) framework called PlanSightRAG. It indexes and reasons directly over plan imagery, integrates a ColNomic-3B multi-vector retrieval, an agentic Planner-Retriever-Auditor-Synthesizer, and MaxSim heatmaps as an evidence trail. We introduce a 4,056-pair benchmark from five state Departments of Transportation (DOT) standard plans (1,898 pages). PlanSightRAG achieves 91.47% Recall@5 on zero-shot retrieval, while on a held-out Michigan DOT corpus, it achieves 91.40%. On synthetic, parametrically-generated compliance drawings, our Qwen2.5-VL-72B pipeline reaches 100% verdict accuracy only when supplied a pre-resolved rule threshold, a controlled ceiling that a non-VLM OCR baseline already reaches at 76.4%. Finally, we demonstrate autonomous visual rule-grounding by extracting numeric limits directly from a specification corpus without any human-supplied rules.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.26091",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "agent or planning",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  },
+  {
+    "title": "Reasoning-aware multimodal retrieval-augmented generation for evidence-grounded clinical decision support",
+    "paper_url": "https://doi.org/10.1016/j.ibmed.2026.100467",
+    "published": "2026-11",
+    "authors": [
+      "Bao Nguyen",
+      "Hung Pham",
+      "Thien Tran",
+      "Son Dao"
+    ],
+    "abstract": "",
+    "venue": "Intelligence-Based Medicine",
+    "doi": "10.1016/j.ibmed.2026.100467",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "UMER: Unifying Embedding and Ranking via Pair-Aware Discriminative Reasoning for Universal Multimodal Retrieval",
+    "paper_url": "https://arxiv.org/abs/2608.18504",
+    "published": "2026-08-19",
+    "authors": [
+      "Libiao Chen",
+      "Xiyang Liu",
+      "Yanheng Wei",
+      "Tao Wang",
+      "Zhenyu Tang"
+    ],
+    "abstract": "Universal multimodal retrieval aims to support diverse instruction-aware retrieval tasks, demanding both efficient corpus-scale matching and fine-grained semantic reasoning. Recent MLLM-based embedding methods typically derive representations from hidden states, while Chain-of-Thought (CoT) reasoning is emerging as a promising strategy for embedding enhancement by encoding intermediate semantic evidence into the representation space. However, existing CoT methods typically use item-wise reasoning over queries and candidates in isolation, providing no explicit evidence to distinguish a positive from a semantically confusable hard negative. Moreover, contrastive embeddings capture global similarity but struggle with meta-tasks requiring answer verification, category judgment or fine-grained reasoning. In this paper, we propose UMER, a Unified Multimodal Embedding and Ranking framework for universal multimodal retrieval. UMER replaces item-wise reflection with Pair-Aware Discriminative Reasoning, which compares query--candidate pairs to identify instruction-relevant matching and discrepancy evidence. UMER jointly learns contrastive embeddings for efficient global matching and discriminative ranking for explicit pairwise relevance judgment within a single MLLM. A complementary mutual distillation strategy further transfers reliable pairwise preferences between the embedding and ranking functions. On the MMEB-V2 benchmark, UMER achieves state-of-the-art performance under comparable experimental settings while supporting budget-adjustable inference.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.18504",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 10,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "A multimodal retrieval-augmented framework for geotechnical soil classification using cross vision-text embeddings and LLM reasoning",
+    "paper_url": "https://doi.org/10.1016/j.aei.2026.104971",
+    "published": "2026-11",
+    "authors": [
+      "Pierre Guy Atangana Njock",
+      "Zhen-Yu Yin",
+      "Hao-Ruo XU",
+      "Ning Zhang"
+    ],
+    "abstract": "",
+    "venue": "Advanced Engineering Informatics",
+    "doi": "10.1016/j.aei.2026.104971",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "EMR2A: Evidence-Grounded Multimodal Retrieval with Reasoning Audit for interpretable pneumonia subtyping",
+    "paper_url": "https://doi.org/10.1016/j.bspc.2026.111011",
+    "published": "2026-11",
+    "authors": [
+      "Xiyao Wang",
+      "Liang Liu",
+      "Lu Gan",
+      "Yang Dai",
+      "Miao Zhu",
+      "Xihe Qiu",
+      "Leilei Xu"
+    ],
+    "abstract": "",
+    "venue": "Biomedical Signal Processing and Control",
+    "doi": "10.1016/j.bspc.2026.111011",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "Hypergraph-based Multimodal Retrieval-Augmented Generation with Incremental Refinement",
+    "paper_url": "https://arxiv.org/abs/2608.16628",
+    "published": "2026-08-17",
+    "authors": [
+      "Shenao Chen",
+      "Yidan Xu",
+      "Xiangmin Han",
+      "Rundong Xue",
+      "Duanpo Wu",
+      "Yuhan Gao",
+      "Chenggang Yan",
+      "Yue Gao"
+    ],
+    "abstract": "Modern Multimodal Retrieval-Augmented Generation (M-RAG) systems are fundamentally limited by the binary connectivity paradigm of traditional simple graphs, which fails to capture the intricate, high-order correlations among heterogeneous entities, such as the N-ary relationships between a visual chart, its scattered textual descriptions, and underlying numerical data. Furthermore, existing refinement strategies often rely on exhaustive, full-page reconstruction to align cross-modal information, leading to prohibitive computational redundancy and the introduction of contextual noise in long-form document processing. In this paper, we propose Hyper-M2RAG, a novel framework that redefines multimodal document retrieval through High-order Hypergraph Representation Learning. We first formalize the document structure as a Multimodal Hypergraph, utilizing hyperedges as unified semantic containers to encapsulate multi-way associations across text, images, and tables, thereby transcending point-to-point modeling. To mitigate semantic fragmentation caused by physical pagination, we introduce an Anchor-driven Incremental Refinement mechanism. Rather than performing a global sweep, our approach identifies boundary-crossing anchor nodes and reconstructs their local hyper-topology using one-hop neighborhood contexts. This targeted refinement effectively bridges cross-page knowledge gaps with minimal computational footprints. Extensive evaluations on multimodal benchmarking datasets demonstrate that Hyper-M2RAG significantly outperforms state-of-the-art methods in both retrieval precision and generation coherence. Our code is available at https://github.com/ShenAoChen2001/MMHRAG.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.16628",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "KoViDoRe: Korean Visual Document Retrieval",
+    "paper_url": "https://arxiv.org/abs/2608.20840",
+    "published": "2026-08-21",
+    "authors": [
+      "Yongbin Choi",
+      "Yongwoo Song",
+      "Mujeen Sung"
+    ],
+    "abstract": "Recent advances in multimodal retrieval have improved the ability to retrieve information from visually rich documents such as PDFs and reports. However, existing benchmarks remain largely centered on English and provide limited coverage of Korean visual documents with complex structures. Furthermore, most existing Korean resources primarily evaluate single-page retrieval, failing to capture realistic scenarios that require evidence aggregation across multiple pages. To address these gaps, we introduce KoViDoRe, a benchmark for Korean visual document retrieval. The dataset is constructed from publicly available Korean documents with diverse layouts, including tables, figures, and multi-column structures. We develop a multi-stage data curation pipeline consisting of structured document parsing, synthetic query generation using both summary-based and context-based strategies, and relevance mapping with human verification. Using KoViDoRe, we evaluate a wide range of multimodal retrieval models and observe that current models struggle to effectively handle Korean visual document retrieval, particularly in settings involving structured content and diverse query types. Motivated by this finding, we further curate a large-scale training dataset, Ko-VDR Train Public, to support the development of retrieval models tailored to Korean visual documents. Together, KoViDoRe and Ko-VDR Train Public provide a unified benchmark and training resource for Korean visual document retrieval.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.20840",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: visual document retrieval",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "LazySloth: Bounded LLM-based Lazy Tree Search for Fast Long Video Comprehension",
+    "paper_url": "https://arxiv.org/abs/2609.37426",
+    "published": "2026-09-29",
+    "authors": [
+      "Arka Mukherjee",
+      "Kaleen Shrestha",
+      "Larissa Zhu",
+      "Maja Matarić"
+    ],
+    "abstract": "Modern vision-language models (VLMs) have shown promising results in long-video understanding due to the rich semantic information they can capture. However, most methods focus on coarse captioning of extracted image frames that are computationally inefficient and require models with large context windows. While past work has explored efficient methods through multimodal retrieval-augmented generation (RAG), they rely on lossy embeddings that lose temporal context and fine-grained detail. Few works to date have investigated how VLM-based query-relevant information retrieval can be optimized. We introduce LazySloth, an efficient tree-based search method that speeds up video comprehension and retrieval tasks 2.9-8.3x (compared to existing agentic methods) through bounded captioning of portions of the video considered irrelevant by a VLM of the video. Compared to contemporary specialized video-understanding VLMs and RAG-based methods, LazySloth achieved similar or better final task accuracy across two recent open-source base VLMs--Gemma 4 31B and Qwen3.6 27B--across four benchmarks. LazySloth reduced the gap between the base open-source model and a closed-source model, GPT-4o. Ablations showed that replacing VLM scene understanding with CLIP-based retrieval cost 8.8-19.9% in accuracy, while lazy tree construction matches eager construction at a fraction of the captioning cost. With LazySloth, we demonstrate the possibility of faster long-video comprehension without substantial loss in performance.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.37426",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "agent or planning",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  },
+  {
+    "title": "LëtzCross: A Cross-Lingual Page-Level Benchmark for Multimodal Retrieval over Luxembourgish Documents",
+    "paper_url": "https://arxiv.org/abs/2608.21714",
+    "published": "2026-08-22",
+    "authors": [
+      "Omar El Bachyr",
+      "Fred Philippy",
+      "Laura Maria Bernardy",
+      "Saad Ezzini",
+      "Jacques Klein",
+      "Tegawende Bissyande"
+    ],
+    "abstract": "Recent page-image retrievers such as ColPali have improved retrieval over visually rich documents, yet little is known about how they behave in cross-lingual, low-resource settings. We introduce LëtzCross, a benchmark for cross-lingual page-level retrieval over Luxembourgish PDF documents, with document pages indexed as images and queries provided in English, French, German, and Luxembourgish. The benchmark combines text-focused QA pairs with visually grounded QA pairs, covering both textual and visual retrieval needs in PDF-based RAG. We use LëtzCross to compare OCR-based text-only retrievers with ColPali-style page-image retrievers and find that the latter perform better across query languages in this system-level comparison. We also examine single-language and multilingual fine-tuning. Fine-tuning transfers across query languages, with French yielding the highest mean performance on Luxembourgish queries among the single-language settings. In the multilingual setting, including Luxembourgish gives the strongest results and substantially improves retrieval for Luxembourgish queries.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.21714",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "MAGIC: Marginal-Guided Compression with Optimal Transport for Efficient Visual Document Retrieval",
+    "paper_url": "https://doi.org/10.48550/arxiv.2609.21018",
+    "published": "2026-09-17",
+    "authors": [
+      "Xu Yuan",
+      "Hua Liu",
+      "Wenqi Fan",
+      "Qing Li"
+    ],
+    "abstract": "Recent visual document retrieval (VDR) systems such as ColPali use multi-vector page embeddings, in which patch-level vectors enable fine-grained evidence matching but incur substantial index storage and MaxSim scoring overhead. Post-hoc merging offers a practical route to efficient VDR by reducing this cost without retraining the retriever, but its uniform reconstruction objectives are poorly aligned with the sparse, non-uniform patch usage induced by late-interaction retrieval. Under aggressive compression, this misalignment can preserve rarely used patches while concentrating retrieval activity on too few retained representatives. To address this misalignment, we propose Marginal-Guided Compression with Optimal Transport (MAGIC), a training-free post-hoc compressor for efficient retrieval with frozen multi-vector embeddings. MAGIC derives a MaxSim-induced compression surrogate and optimizes it through a two-marginal entropic optimal-transport formulation, where a retrieval-demand source marginal prioritizes high-use patches and a balanced target marginal regularizes retained-facet usage. Across ViDoRe benchmarks, keep ratios, and retrieval backbones, MAGIC consistently outperforms strong post-hoc compressors, with particularly large gains in the aggressive-compression regime; component ablations verify the complementary effects of its two marginals. We release the code at: https://github.com/xandery-geek/MAGIC.",
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2609.21018",
+    "arxiv_id": "",
+    "sources": [
+      "OpenAlex"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: visual document retrieval",
+      "retrieval",
+      "multiple modalities",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "MoEMB: Scaling Universal Multimodal Embeddings with Efficient Mixture-of-Experts Models",
+    "paper_url": "https://arxiv.org/abs/2609.08663",
+    "published": "2026-09-08",
+    "authors": [
+      "Xuanming Cui",
+      "Shlok Kumar Mishra",
+      "Wentao Bao",
+      "Aashu Singh",
+      "Zihao Wang",
+      "Xiangjun Fan",
+      "Jun Xiao",
+      "Ser-Nam Lim",
+      "Jianpeng Cheng"
+    ],
+    "abstract": "Universal multimodal embedding (UME) increasingly demands encoder's capacity for handling a broad range of tasks and modalities with increased complexity. Prior scaling methods either increase the representation size, retrieval effort, or scales the encoder into a heavy multimodal LLM. Recent works, such as Think-Then-Embed (TTE), explore scaling via reasoning tokens. However, embedding models are hard to scale up: increasing parameters directly tradeoffs for the large training batch size that contrastive learning needs, and retrieval has to be served under tight latency. Moreover, UME tasks are diverse in complexity, where scaling up embedders can bring significant redundant computation. In this work, we propose MOEMB, which instead scales UME along the expert axis through mixture-of-experts (MoE), growing encoder capacity while preserving single-vector, non-autoregressive encoding. Through a systematic study of the design space and training recipes for MoE-based UME, MoEMB sets a new state of the art on both MMEB-V2 and MRMR among models trained on public MMEB-family data: with only 3B active parameters, MoEMB surpasses TTE-based methods with >4x active parameters, using significantly less computes. To further improve the scalability and efficiency, we conduct the first comprehensive study of adaptive computation for MoE-based embedding, spanning diverse strategies across training-based and inference-only methods. Together, these results support expert scaling as an effective and efficient direction for UME, with adaptive computation further improving efficiency for MLLM-based embedding models towards large-scale retrieval and recommendation systems.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.08663",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal embedding",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "Multimodal Retrieval Augmented Generation for Information-Enriched Digital Twins: Automating Information Extraction and Mapping in a University Central Utility Plant",
+    "paper_url": "https://doi.org/10.1061/9780784486979.071",
+    "published": "2026-08-27",
+    "authors": [
+      "Chan Young Park",
+      "Rafay Ali",
+      "H. David Jeong",
+      "Ashrant Aryal",
+      "Ghang Lee"
+    ],
+    "abstract": "",
+    "venue": "Construction Research Congress 2026",
+    "doi": "10.1061/9780784486979.071",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions",
+    "paper_url": "https://arxiv.org/abs/2608.29607",
+    "published": "2026-08-30",
+    "authors": [
+      "Zirong Chen",
+      "Fuda Ye",
+      "Kuan Zhang",
+      "Enjun Du",
+      "Junfu Pu",
+      "Xinlei Wang",
+      "Xinyu Zuo",
+      "Lisheng Duan",
+      "Jin Ma",
+      "Yongqi Zhang"
+    ],
+    "abstract": "Mobile AI acts as a visual oracle, empowering users to snap a picture of something and ask for information. Snap-and-ask retrieval is now one of the most common entry points for mobile AI, yet photos are often blurry, while text questions may be short or mistyped. Existing benchmarks only test on clean inputs or do not isolate paired robustness in snap-and-ask retrieval. Therefore, we introduce SnapBench, the first paired benchmark for robust snap-and-ask multimodal retrieval, spanning 1,145 queries, 9,085 gallery items under 53 controlled corruption conditions with human annotations. We evaluate 16 multimodal retrievers, covering dual-tower encoders and embedding-based VLMs. Results show that image corruptions substantially degrade retrieval, while text corruptions mainly affect text-only retrieval and have limited impact on joint retrieval. Clean image-only retrieval often outperforms joint retrieval, indicating the coarse-text drag and the lack of cross-modal fallback under noisy inputs. SnapBench provides a controlled testbed for evaluating robust retrieval in snap-and-ask scenarios. We further propose MOOR (Modality-anchored, Outlier-aware, Optimal Reweighting), a simple adaptive fusion approach, highlighting the need for reliability-aware modality calibration in snap-and-ask retrieval.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.29607",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "AdaptiveEmbed: Sample-Adaptive Multi-Vector Representation for Multimodal Retrieval",
+    "paper_url": "https://arxiv.org/abs/2608.25412",
+    "published": "2026-08-26",
+    "authors": [
+      "Xinze Liu",
+      "Lei Yang",
+      "Dayan Wu",
+      "Hengjie Zhu",
+      "Zihao Zhang",
+      "Hanqi Wu",
+      "Tianzhu Hu",
+      "Peng Fu",
+      "Zheng Lin",
+      "Weiping Wang"
+    ],
+    "abstract": "Multi-vector representations have emerged as an effective paradigm for multimodal retrieval, representing each sample with multiple complementary embeddings to capture fine-grained cross-modal information. However, existing approaches typically employ a fixed representation capacity, assigning the same number of vectors to all samples regardless of their individual retrieval demands. Such a fixed-capacity formulation overlooks the fact that different samples may require different amounts of representation capacity for effective retrieval. In this work, we introduce \\emph{Sample-Adaptive Multi-Vector Representation} (SAMVR), a new problem setting for multimodal retrieval that studies how multi-vector representation capacity can be allocated at the sample level. Under SAMVR, each sample is represented by a \\emph{content-adaptive embedding set} (CAES), whose capacity is determined according to the sample-specific retrieval utility of additional representation vectors. To instantiate SAMVR, we propose \\emph{AdaptiveEmbed}, a unified framework for learning sample-adaptive multi-vector representations. AdaptiveEmbed learns structured multi-vector representations through \\emph{Multi-Group Contrastive Learning} (MGCL) with the symmetric \\emph{set-to-set similarity} (SetSim), and further employs \\emph{Utility Policy Optimization} (UPO) to determine sample-specific representation capacity via \\emph{Marginal Utility Allocation} (MUA). Experiments across multimodal retrieval benchmarks involving image, text, video, and audio show that sample-adaptive capacity allocation achieves overall better retrieval performance than fixed-capacity multi-vector representations, validating the effectiveness of SAMVR for multimodal retrieval. These results establish SAMVR as a viable formulation for adaptive capacity allocation in multi-vector multimodal retrieval.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.25412",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Universal Multimodal Retrievers",
+    "status": "needs-review"
+  },
+  {
+    "title": "DSPrompt: Dynamic Soft Prompt Defense Against M-RAG Corruption",
+    "paper_url": "https://arxiv.org/abs/2608.16536",
+    "published": "2026-08-17",
+    "authors": [
+      "Chang Liu",
+      "Yuni Lai",
+      "Mingyue Cui",
+      "Cong Tian",
+      "Yunyan Zhang",
+      "Xian Wu",
+      "Kai Zhou",
+      "Bin Xiao"
+    ],
+    "abstract": "Multimodal Retrieval Augmented Generation (M-RAG) is increasingly vulnerable to adversarial attacks where malicious data are crafted to produce embeddings that align with benign entries in the vector space, deceiving retrieval and inducing harmful outputs. Existing defenses primarily operate at query time, relying on auxiliary detectors, similarity re-ranking, or feature-consistency checks. However, these approaches suffer from non-trivial inference overhead, generalize poorly to unseen attack strategies, and often assume specific attack distributions. To address this, we propose DSPrompt, a Dynamic Soft Prompt defense framework that directly reshapes the retriever's embedding semantics, without modifying the retrieval pipeline. It inserts few learnable soft prompts into each layer of the visual and textual encoders of a frozen retriever, utilizing a shallow-to-deep length schedule that is adaptive to the capacity in the model layers. These prompts are trained under a dynamic min-max scheme: an online multimodal attacker continually crafts hard adversarial documents against the current retriever, while the defender is updated to push such documents out of the top-k while preserving the ranking and diversity of benign evidence. Because the defended encoder can be pre-computed and indexed exactly as in standard dense retrieval, DSPrompt incurs no additional per-query optimization and introduces fewer than 1% additional parameters. Extensive experiments across four benchmarks and three representative poisoning attacks show that DSPrompt substantially reduces the attack success rate and poison retrieval rate while maintaining near-lossless retrieval utility and generation fidelity, consistently outperforming existing defense baselines at a fraction of their computational cost.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.16536",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "EL-RAKHAWI UNIFIED FRAMEWORK FOR MULTIMODAL COGNITIVE REASONING: INTEGRATING MULTIMODAL RAG WITH DYNAMIC KNOWLEDGE GRAPHS AND 4D NEURAL MODELING",
+    "paper_url": "https://doi.org/10.5281/zenodo.23031071",
+    "published": "2026-09-29",
+    "authors": [
+      "mohamed kamal arafa el-rakhawi"
+    ],
+    "abstract": "The El-Rakhawi Unified Framework for Multimodal Cognitive Reasoning is a novel research proposal by Dr. Mohamed Kamal Arafa El-Rakhawi tackling AI hallucinations and the semantic limits of 4D neural rendering. It uniquely integrates Multimodal Retrieval-Augmented Generation, Dynamic Knowledge Graphs, and 4D Neural Modeling. The architecture features four modules: a multimodal indexing engine for cross-modal retrieval, a real-time updating knowledge graph for causal links, a 4D neural-symbolic reasoning core, and a verifiable generation module with explicit grounding scores. By aligning text, video, and 3D spatial data, the system enables trustworthy, hallucination-free reasoning. Pilots in legal tech and industrial digital twins demonstrate its potential to shift AI from mere generation to verifiable, auditable, and contextually grounded intelligence, ensuring reliability.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "doi": "10.5281/zenodo.23031071",
+    "arxiv_id": "",
+    "sources": [
+      "OpenAlex"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "Evidence-Graph Dual-Store Multimodal RAG for Brain Tumor Evaluation from MRI",
+    "paper_url": "https://doi.org/10.5539/cis.v19n2p144",
+    "published": "2026-09-21",
+    "authors": [
+      "Shahebazkhan Pathan",
+      "Shahenabanu Pathan"
+    ],
+    "abstract": "This study proposes an evidence-graph dual-store multimodal retrieval-augmented generation (MM-RAG) framework that combines MRI-derived visual evidence with textual evidence retrieved from similar historical cases and from a curated clinical knowledge repository. The framework couples a case-memory index with a knowledge index, and an agreement-weighted retrieval score selects evidence that is consistent across the two stores. Retrieved items are organised as an evidence graph rather than concatenated, so that supportive signals propagate while unrelated context is suppressed. Experiments use publicly available multiparametric MRI collections and are restricted to three classification tasks: tumor detection, tumor subtype classification, and tumor grade prediction. The framework is compared against three baselines: a vision-only 3D ViT/CNN classifier (M1), an early-fusion multimodal transformer without retrieval (M2), and a text-only retrieval-augmented clinical language model (M3). The proposed method reaches a detection AUROC of 0.985 and AUPRC of 0.980 with an accuracy of 95.8% and an F1 of 95.2%. For the finer-grained tasks, subtype AUROC/AUPRC is 0.952/0.935 and grade AUROC/AUPRC is 0.934/0.915, with F1 values of 89.6% and 87.5%. Agreement-weighted dual-store retrieval improves Recall@5 and nDCG@5 in both stores and yields measurable accuracy gains attributable to retrieved evidence. Confidence gating lowers the error under abstention to 2.9% and improves calibration (ECE = 0.024; Brier = 0.078). These results indicate that retrieval-grounded multimodal fusion supports accurate, interpretable, and better-calibrated brain tumor evaluation.",
+    "venue": "Computer and Information Science",
+    "doi": "10.5539/cis.v19n2p144",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "Hypergraph-Regularized Gramian Volumes for Multimodal Retrieval",
+    "paper_url": "https://arxiv.org/abs/2609.15320",
+    "published": "2026-09-14",
+    "authors": [
+      "Anindya Nag",
+      "Ambuj Mehrish",
+      "Sebastiano Vascon"
+    ],
+    "abstract": "Volume-based multimodal retrieval jointly scores a text query with a candidate's video, audio, and subtitle embeddings. While this approach captures higher-order within-candidate alignment, the score remains candidate-local, and semantically related training samples primarily serve as contrastive negatives. This work introduces Hypergraph-Regularized Gramian Volumes (HyVol), a training-time module that incorporates these semantic relations prior to evaluating the original volume loss. Document hyperedges connect the observed modalities of each candidate, whereas semantic hyperedges link candidates whose detached captions are mutual top-k neighbors. A shallow gated hyper-graph network applies residual corrections to the modality embeddings. Presence masks exclude unavailable streams from message passing, and identity padding preserves the determinant of the observed Gram submatrix without feature imputation. As refinement operates on embeddings rather than scores, the same construction applies to both Gram and HyperGram. We remove the hypergraph after training, leaving the backbone-only architecture, original scoring function, and retrieval cost unchanged. We train both backbones on a 150K-clip subset of VAST-27M and evaluate zero-shot performance on six benchmarks. Under the paired protocol, HyVol improves R@1 across all five retrieval benchmarks, with video-to-text gains reaching +8.3 on MSR-VTT and +7.6 on VATEX. Under missing-modality masking, the V2T margin remains positive in all experimental settings, although the T2V margin becomes slightly negative in four.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.15320",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "Potential for Enhanced Learning in Machine Learning Classes by Using Wiki LLM Indexing",
+    "paper_url": "https://arxiv.org/abs/2609.25303",
+    "published": "2026-09-21",
+    "authors": [
+      "Brian Wright"
+    ],
+    "abstract": "Large language models are increasingly deployed as course-specific tutors, but their usefulness depends on grounding in vetted instructional materials that are often revised mid-semester. Our prior work built a multimodal retrieval-augmented generation (RAG) system over an authentic machine learning course corpus (Foundations of Machine Learning) and found that retrieval improved contextual grounding, but that fixed retrieval strategies were suboptimal. That motivates a different question: whether how a corpus is structured at ingest time matters more than how much is retrieved at query time. We present a controlled head-to-head comparison of two knowledge representations over an identical classroom corpus: (A) vector RAG, replicating the best-performing configuration from our prior study, and (B) an LLM-compiled wiki (Karpathy framework), in which the corpus is synthesized at ingest into linked concept pages with explicit cross-references and citations back to source materials. We evaluate 59 questions spanning single-fact recall, cross-unit concept linking, synthesis and explanation, and currency after a syllabus revision, scored by an LLM judge against a human-authored rubric. Both representations answered single-fact questions about equally well (9.33 vs. 9.96 of 10), but diverged sharply on questions requiring links across course units. The compiled wiki remained accurate and grounded (9.93; 100% grounded in cited sources), while retrieval scored lower and was markedly less grounded (8.14; 64%). The wiki's citations let students and instructors trace any claim back to the lecture that introduced it, adding a layer of dynamic retrieval that machine learning courses require. While further testing is needed, instructors using AI to support learning in ML courses should consider wiki-based structure for its potential to support foundational elements of best practice.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.25303",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: multimodal retrieval-augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG",
+      "evidence grounding"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "Spatial Matryoshka Training for Multi-Granularity Visual Document Retrieval",
+    "paper_url": "https://arxiv.org/abs/2608.29951",
+    "published": "2026-08-30",
+    "authors": [
+      "Trishan Singha Roy",
+      "Arkadeep Acharya",
+      "Vishwajeet Kumar",
+      "Jaydeep Sen",
+      "Sachindra Joshi"
+    ],
+    "abstract": "Multi-modal late-interaction retrievers achieve strong retrieval on visually rich documents by representing each page as per patch embeddings and matching at the token level. However, this approach incurs high storage costs. Existing compression methods typically fix a single compression level at indexing time, limiting flexibility. We present ColSNAP (Spatial Nested Average Pooling)1, a training method that generates a nested hierarchy of compression levels directly from a backbone's patch grid. By spatially pooling patch embeddings into pro- gressively coarser tiers and training all tiers simultaneously, a single model learns to support retrieval at multiple compression levels without architectural changes. Crucially, a single encoding pass yields every tier, enabling the accuracy-storage trade-off to be configured at indexing time to match avail- able storage budgets, rather than being fixed during training. We demonstrate that models trained using ColSNAP maintain near full-resolution retrieval performance under substantial compression and that ColSNAP transfers effectively across multiple late-interaction backbones, and achieves most of its improvements via a lightweight adaptation stage applied to a pre-trained retriever.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.29951",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: visual document retrieval",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+    "paper_url": "https://arxiv.org/abs/2609.02486",
+    "published": "2026-09-02",
+    "authors": [
+      "Adrien Mialland",
+      "Marc Plantevit",
+      "Julien Gallois",
+      "Céline Robardet"
+    ],
+    "abstract": "Document Visual Question Answering (DocVQA) often leverages Retrieval-Augmented Generation (RAG), where late-interaction encoders are commonly used to identify document pages relevant to a user query, before answer generation by a Large Vision-Language Model (LVLM). Existing approaches typically retrieve a fixed top-$k$ number of pages regardless of query complexity, which increases LVLM latency and may degrade answer accuracy. We introduce ViSAR (Visual Semantic Activation Retrieval), a training-free adaptive-$k$ retrieval method for late-interaction visual document retrieval. ViSAR operates directly in the embedding space to construct a query-conditioned page-level similarity matrix that highlights query-relevant semantics and dynamically determines the number of pages to retrieve. Across multiple encoders and LVLMs, ViSAR retrieves compact, query-adapted page sets that reduce RAG latency by up to 58.7\\%, while maintaining or improving answer accuracy compared with fixed top-$k$ and adaptive retrieval heuristics. Furthermore, we show that the similarity matrix structure correlates with answer accuracy, suggesting future directions for retrieval quality-aware document understanding.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.02486",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 8,
+    "reasons": [
+      "strong phrase: visual document retrieval",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "Beyond Maintenance Manual Multimodal RAG: Suggesting What Tool",
+    "paper_url": "https://arxiv.org/abs/2609.05116",
+    "published": "2026-09-04",
+    "authors": [
+      "Seongjun Ha",
+      "Md Rashedul Islam"
+    ],
+    "abstract": "Aircraft technicians are required to consult the maintenance manual (MM) for nearly every task, and locating the relevant procedure across hundreds of pages remains time-consuming. Multimodal retrieval augmented generation (MRAG) has been proposed to address this, allowing technicians to retrieve procedures, together with the accompanying figures, through natural-language queries. However, retrieval alone does not tell the technicians which tools the task requires. The MM identifies special tools only when the corresponding step is reached, and it does not state hand tool requirements at all; to select hand tools, technicians are required to find the hardware dimension from the illustrated parts catalog (IPC) and infer the right tool from it. We therefore propose MRAG-SWAT, an extension of the MRAG pipeline that returns the required hand tools and special tools alongside the retrieved procedure. The framework was implemented for the Lycoming IO-360-N1A engine and demonstrated on eight test queries. By presenting the correct tools together with the procedure, MRAG-SWAT may help reduce repeated trips to the tool crib, prevent damage to aircraft caused by improper tool selection, and thereby avoid additional maintenance tasks and support continued airworthiness.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.05116",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 7,
+    "reasons": [
+      "strong phrase: multimodal retrieval augmented",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Foundations",
+    "status": "needs-review"
+  },
+  {
+    "title": "Doc-REFRAG: Rethinking Multimodal Document Retrieval-Augmented Generation",
+    "paper_url": "https://arxiv.org/abs/2608.30163",
+    "published": "2026-08-31",
+    "authors": [
+      "Ruofan Hu",
+      "Shengyang Xu",
+      "Minjie Hong",
+      "Xiaoda Yang",
+      "Sashuai Zhou",
+      "Ke Lei",
+      "Tao Jin",
+      "Zhou Zhao"
+    ],
+    "abstract": "Real-world knowledge resides in multimodal documents, necessitating retrieval-augmented generation (RAG) for accurate question answering. However, existing multimodal RAG models are primarily designed for single-image or closed-document settings and exhibit limited accuracy in realistic multi-image scenarios. Moreover, processing numerous retrieved images incurs substantial computational overhead from irrelevant visual tokens. To address these challenges, we introduce DocLongRAG, a large-scale dataset of 343K question--answer pairs, each associated with an average of 37.4 retrieved images to reflect authentic RAG workflows. Building on this dataset, we propose Doc-REFRAG, a question-guided framework that compresses visual tokens into coarse chunks and selectively expands question-relevant ones via a lightweight RL-based selector. Experiments on six benchmarks show that Doc-REFRAG outperforms eleven strong baselines, achieving state-of-the-art accuracy with significantly lower inference latency. Our resources are available at https://github.com/Collab-Gen/Doc-REFRAG.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.30163",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 7,
+    "reasons": [
+      "strong phrase: multimodal rag",
+      "retrieval",
+      "multiple modalities",
+      "RAG"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "ResComEmb: Effective and Efficient Multimodal Embedding via Residual Homogeneity Compression",
+    "paper_url": "https://arxiv.org/abs/2609.37225",
+    "published": "2026-09-29",
+    "authors": [
+      "Zijing Cai",
+      "Yuzhe Wang",
+      "Jingxian Zhu",
+      "Fengbin Zhu",
+      "Richang Hong"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) have shown strong potential for universal multimodal representation learning. However, existing methods either compress each input into a single vector, limiting fine-grained expressiveness, or retain long sequences of visual-token vectors, incurring substantial storage and interaction costs. To resolve this trade-off, we propose ResComEmb, a trainable framework for effective and efficient universal multi-vector multimodal embedding. ResComEmb first encodes each input at native dynamic resolution into ordered global, intermediate, and fine-grained views. After MLLM contextualization and embedding projection, a trainable Residual Homogeneity Compression (RHC) module reduces within-granularity redundancy and cross-granularity repetition under explicit visual token budgets. Then, ResComEmb introduces a length-adaptive Bidirectional Late-Interaction Matching mechanism for robust query-document scoring, which averages the strongest token-level matches in each direction and combines the two scores using a weight based on how many valid tokens each side has. Extensive experiments on MMEB, ViDoRe V1, and ViDoRe V2 show that ResComEmb produces higher-quality universal multimodal embeddings than VLM2Vec-V2, and outperforms ColQwen2.5 in visual document retrieval using only 37.5% of its full visual token budget, demonstrating a favorable effectiveness-efficiency trade-off.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.37225",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 7,
+    "reasons": [
+      "strong phrase: visual document retrieval",
+      "large multimodal model",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Visual Document Retrieval and RAG",
+    "status": "needs-review"
+  },
+  {
+    "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+    "paper_url": "https://arxiv.org/abs/2608.24053",
+    "published": "2026-08-25",
+    "authors": [
+      "Junjie Zhou",
+      "Ke Mei",
+      "Lei Li",
+      "Tianyi Wang",
+      "Fengyun Rao",
+      "Jing Lyu"
+    ],
+    "abstract": "Universal multimodal embeddings are becoming a core component of modern AI systems, enabling heterogeneous content to be represented in a shared space for applications such as retrieval, recommendation, classification, and agentic systems. In this report, we present WeMM-Embedding, a family of universal multimodal embedding models supporting text, images, videos, visual documents, and arbitrarily interleaved multimodal inputs with flexible output dimensions. The family comprises 2B, 4B, and 9B variants and is trained in two stages: a large-scale multimodal alignment stage, followed by a refinement stage using curated data, fine-grained relevance supervision, and cross-scale knowledge transfer. Across extensive evaluations, WeMM-Embedding achieves leading performance on multiple public benchmarks. Notably, the 2B variant already surpasses the previously leading 8B open-source baseline on MMEB-v2, while the 9B variant further achieves a new state-of-the-art overall score of 80.6. WeMM-Embedding also demonstrates strong practical performance across WeChat applications, with substantial gains on a 26-task in-house benchmark and consistent improvements across 14 online A/B tests. It has been deployed at scale across recommendation and search applications, including WeChat Channels, Official Accounts, Moments, and e-commerce services. We have released the model weights and code to facilitate future research at https://github.com/Tencent/WeMM-Embedding.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.24053",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 7,
+    "reasons": [
+      "strong phrase: multimodal embedding",
+      "agent or planning",
+      "retrieval",
+      "multiple modalities"
+    ],
+    "suggested_section": "Agentic Multimodal Search",
+    "status": "needs-review"
+  }
+]
