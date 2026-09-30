@@ -49,7 +49,6 @@ class Candidate:
     reasons: list[str] = field(default_factory=list)
     suggested_section: str = "Foundations"
     status: str = "needs-review"
-    framework: list[str] = field(default_factory=list)
 
 
 def compact(value: Any) -> str:
@@ -331,7 +330,7 @@ def write_outputs(candidates: list[Candidate], failures: list[str]) -> None:
     lines = [
         "# Multimodal Agentic Retrieval candidate report", "",
         f"Candidates awaiting human review: **{len(rows)}**", "",
-        "Candidates are not added to the public README until their metadata, category and framework summary are reviewed.", "",
+        "Candidates are not added to the public README until their metadata and relevance are reviewed and an original figure is selected from the official PDF.", "",
     ]
     for item in candidates:
         lines += [

@@ -8,7 +8,33 @@
     "code_url": "https://github.com/SensenGao/Multimodal-RAG-Survey-For-Document",
     "section": "Surveys and Roadmaps",
     "summary": "A survey of multimodal RAG for long and visually rich document understanding.",
-    "framework": ["Document collections", "Retrieval taxonomy", "Multimodal fusion and generation", "Benchmarks and open challenges"]
+    "authors": [
+      "Sensen Gao",
+      "Shanshan Zhao",
+      "Xu Jiang",
+      "Lunhao Duan",
+      "Yong Xien Chng",
+      "Qing-Guo Chen",
+      "Weihua Luo",
+      "Kaifu Zhang",
+      "Jia-Wang Bian",
+      "Mingming Gong"
+    ],
+    "figure": {
+      "path": "assets/frameworks/scaling-beyond-context.png",
+      "source_pdf_url": "https://aclanthology.org/2026.acl-long.204.pdf",
+      "source_pdf_sha256": "93bd77c54e575e8b9b261225d2682c844dccbd43286eb9c20baaea6a97c7449e",
+      "figure_label": "Figure 2",
+      "figure_kind": "overview",
+      "page": 5,
+      "crop_pt": [
+        73.84,
+        69.52,
+        285.2,
+        283.28
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "llm-search-agents-survey",
@@ -19,7 +45,33 @@
     "code_url": "",
     "section": "Surveys and Roadmaps",
     "summary": "A roadmap for LLM search agents, covering planning, retrieval, reasoning and evaluation.",
-    "framework": ["User information need", "Agent planning", "Tool-based search and retrieval", "Reasoning, synthesis and evaluation"]
+    "authors": [
+      "Yunjia Xi",
+      "Jianghao Lin",
+      "Yongzhao Xiao",
+      "Zheli Zhou",
+      "Rong Shan",
+      "Te Gao",
+      "Jiachen Zhu",
+      "Weiwen Liu",
+      "Yong Yu",
+      "Weinan Zhang"
+    ],
+    "figure": {
+      "path": "assets/frameworks/llm-search-agents-survey.png",
+      "source_pdf_url": "https://aclanthology.org/2026.acl-long.374.pdf",
+      "source_pdf_sha256": "6929de22ce428f679c77e8582e28e239c74a6bdb6123ba8aa21ca7b2fa479d7d",
+      "figure_label": "Figure 2",
+      "figure_kind": "overview",
+      "page": 3,
+      "crop_pt": [
+        82.48,
+        65.68,
+        512.24,
+        306.32
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "ask-in-any-modality",
@@ -30,7 +82,31 @@
     "code_url": "https://github.com/llm-lab-org/Multimodal-RAG-Survey",
     "section": "Surveys and Roadmaps",
     "summary": "A comprehensive taxonomy of multimodal RAG datasets, retrieval, fusion, generation and agentic methods.",
-    "framework": ["Any-modality query", "Multimodal retrieval", "Knowledge fusion", "Grounded multimodal generation"]
+    "authors": [
+      "Mohammad Mahdi Abootorabi",
+      "Amirhosein Zobeiri",
+      "Mahdi Dehghani",
+      "Mohammadali Mohammadkhani",
+      "Bardia Mohammadi",
+      "Omid Ghahroodi",
+      "Mahdieh Soleymani Baghshah",
+      "Ehsaneddin Asgari"
+    ],
+    "figure": {
+      "path": "assets/frameworks/ask-in-any-modality.png",
+      "source_pdf_url": "https://aclanthology.org/2025.findings-acl.861.pdf",
+      "source_pdf_sha256": "47e5eb3b44dc87ef224498235b5448ec2f6455bdc2023dd8ea61712631f835f4",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 2,
+      "crop_pt": [
+        90.64,
+        67.6,
+        504.08,
+        209.36
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "mllms-in-vrd-retrieval-survey",
@@ -41,7 +117,24 @@
     "code_url": "",
     "section": "Surveys and Roadmaps",
     "summary": "Organizes MLLM-based document retrieval into captioning, embedding and end-to-end page representation paradigms.",
-    "framework": ["Visually rich pages", "Captioner / embedder / representer", "Page-level retrieval", "RAG answer generation"]
+    "authors": [
+      "Xiantao Zhang"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mllms-in-vrd-retrieval-survey.png",
+      "source_pdf_url": "https://aclanthology.org/2025.ijcnlp-long.2.pdf",
+      "source_pdf_sha256": "e8efad198f31320c89094bee9f93dd92ffb724eddc54c3bcbdeea12ae9854ac6",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 3,
+      "crop_pt": [
+        80.56,
+        71.44,
+        526.16,
+        326.48
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "retrieving-multimodal-information-survey",
@@ -52,7 +145,34 @@
     "code_url": "",
     "section": "Surveys and Roadmaps",
     "summary": "An early systematic review of retrieving multimodal information to augment generation.",
-    "framework": ["Multimodal sources", "Retriever", "Evidence integration", "Augmented generator"]
+    "authors": [
+      "Ruochen Zhao",
+      "Hailin Chen",
+      "Weishi Wang",
+      "Fangkai Jiao",
+      "Xuan Long Do",
+      "Chengwei Qin",
+      "Bosheng Ding",
+      "Xiaobao Guo",
+      "Minzhi Li",
+      "Xingxuan Li",
+      "Shafiq Joty"
+    ],
+    "figure": {
+      "path": "assets/frameworks/retrieving-multimodal-information-survey.png",
+      "source_pdf_url": "https://aclanthology.org/2023.findings-emnlp.314.pdf",
+      "source_pdf_sha256": "59026156d66468fa64fb07f9129aee5e5d90878d3c37908c0dde0827828fa8b9",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 21,
+      "crop_pt": [
+        98,
+        258,
+        454,
+        410
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "ra-cm3",
@@ -63,7 +183,32 @@
     "code_url": "",
     "section": "Foundations",
     "summary": "RA-CM3 augments an autoregressive multimodal model with retrieved image-text memory.",
-    "framework": ["Image-text context", "Retrieve multimodal neighbors", "Interleave retrieved evidence", "Autoregressive multimodal generation"]
+    "authors": [
+      "Michihiro Yasunaga",
+      "Armen Aghajanyan",
+      "Weijia Shi",
+      "Rich James",
+      "Jure Leskovec",
+      "Percy Liang",
+      "Mike Lewis",
+      "Luke Zettlemoyer",
+      "Wen-tau Yih"
+    ],
+    "figure": {
+      "path": "assets/frameworks/ra-cm3.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2211.12561v2",
+      "source_pdf_sha256": "18a4bb49ee7128a2c88193211fbb6757e37602cfa097c2aacbd90669fac9b67a",
+      "figure_label": "Figure 1",
+      "figure_kind": "architecture",
+      "page": 1,
+      "crop_pt": [
+        50,
+        160,
+        562,
+        310
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "reveal",
@@ -74,7 +219,32 @@
     "code_url": "https://reveal-cvpr.github.io/",
     "section": "Foundations",
     "summary": "Retrieves evidence from multi-source multimodal memory for visual-language pre-training and downstream tasks.",
-    "framework": ["Image and text input", "Multi-source knowledge memory", "Retriever and evidence fusion", "Vision-language prediction"]
+    "authors": [
+      "Ziniu Hu",
+      "Ahmet Iscen",
+      "Chen Sun",
+      "Zirui Wang",
+      "Kai-Wei Chang",
+      "Yizhou Sun",
+      "Cordelia Schmid",
+      "David A. Ross",
+      "Alireza Fathi"
+    ],
+    "figure": {
+      "path": "assets/frameworks/reveal.png",
+      "source_pdf_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_REVEAL_Retrieval-Augmented_Visual-Language_Pre-Training_With_Multi-Source_Multimodal_Knowledge_Memory_CVPR_2023_paper.pdf",
+      "source_pdf_sha256": "49371341183795d74fca92a439dd4e0b87fdbab4fd17da72dc4b5cc8cb1b32c7",
+      "figure_label": "Figure 2",
+      "figure_kind": "architecture",
+      "page": 3,
+      "crop_pt": [
+        47.92,
+        49.84,
+        548.24,
+        203.12
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "cm3leon",
@@ -85,7 +255,50 @@
     "code_url": "",
     "section": "Foundations",
     "summary": "CM3Leon combines retrieval-augmented pre-training with multimodal instruction tuning.",
-    "framework": ["Large image-text corpus", "Retrieval-augmented pre-training", "Multimodal instruction tuning", "Text and image generation"]
+    "authors": [
+      "Lili Yu",
+      "Bowen Shi",
+      "Ramakanth Pasunuru",
+      "Benjamin Muller",
+      "Olga Golovneva",
+      "Tianlu Wang",
+      "Arun Babu",
+      "Binh Tang",
+      "Brian Karrer",
+      "Shelly Sheynin",
+      "Candace Ross",
+      "Adam Polyak",
+      "Russell Howes",
+      "Vasu Sharma",
+      "Puxin Xu",
+      "Hovhannes Tamoyan",
+      "Oron Ashual",
+      "Uriel Singer",
+      "Shang-Wen Li",
+      "Susan Zhang",
+      "Richard James",
+      "Gargi Ghosh",
+      "Yaniv Taigman",
+      "Maryam Fazel-Zarandi",
+      "Asli Celikyilmaz",
+      "Luke Zettlemoyer",
+      "Armen Aghajanyan"
+    ],
+    "figure": {
+      "path": "assets/frameworks/cm3leon.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2309.02591v1",
+      "source_pdf_sha256": "9466fda32dc44dccb19f1ef3fb4abdd0ae6c20d960bcaf94a5d28e88d568b680",
+      "figure_label": "Figure 5",
+      "figure_kind": "overview",
+      "page": 7,
+      "crop_pt": [
+        110.8,
+        72.4,
+        492.08,
+        295.28
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "murag",
@@ -96,7 +309,28 @@
     "code_url": "",
     "section": "Foundations",
     "summary": "Jointly retrieves textual and visual evidence for open-domain multimodal question answering.",
-    "framework": ["Question", "Text and image retrieval", "Multimodal evidence encoder", "Answer decoder"]
+    "authors": [
+      "Wenhu Chen",
+      "Hexiang Hu",
+      "Xi Chen",
+      "Pat Verga",
+      "William Cohen"
+    ],
+    "figure": {
+      "path": "assets/frameworks/murag.png",
+      "source_pdf_url": "https://aclanthology.org/2022.emnlp-main.375.pdf",
+      "source_pdf_sha256": "026fa5aead3312d1c26dc44e39fba20810fa546714d4c76e4b0a20b24b27a7ac",
+      "figure_label": "Figure 4",
+      "figure_kind": "architecture",
+      "page": 5,
+      "crop_pt": [
+        67.6,
+        67.6,
+        527.12,
+        323.12
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "kat",
@@ -107,7 +341,29 @@
     "code_url": "https://github.com/guilk/KAT",
     "section": "Foundations",
     "summary": "Combines implicit model knowledge with retrieved explicit knowledge for knowledge-based VQA.",
-    "framework": ["Image and question", "Retrieve explicit knowledge", "Fuse implicit and explicit knowledge", "Answer generation"]
+    "authors": [
+      "Liangke Gui",
+      "Borui Wang",
+      "Qiuyuan Huang",
+      "Alex Hauptmann",
+      "Yonatan Bisk",
+      "Jianfeng Gao"
+    ],
+    "figure": {
+      "path": "assets/frameworks/kat.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2112.08614v2",
+      "source_pdf_sha256": "eac54787c7cb8f0ca8495004643ed491ce456460c70beb1a37bfd7dfac54b804",
+      "figure_label": "Figure 2",
+      "figure_kind": "architecture",
+      "page": 4,
+      "crop_pt": [
+        84.88,
+        67.6,
+        507.44,
+        276.08
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "mmeb-v3",
@@ -118,7 +374,35 @@
     "code_url": "",
     "section": "Universal Multimodal Retrievers",
     "summary": "Evaluates omni-modality embedding models across text, image, video, audio and agent-centric tasks.",
-    "framework": ["Omni-modal task suite", "Query and candidate encoding", "Embedding-based ranking", "Capability-gap analysis"]
+    "authors": [
+      "Haohang Huang",
+      "Xuan Lu",
+      "Mingyi Su",
+      "Xuan Zhang",
+      "Ziyan Jiang",
+      "Ping Nie",
+      "Kai Zou",
+      "Tomas Pfister",
+      "Wenhu Chen",
+      "Wei Zhang",
+      "Xiaoyu Shen",
+      "Rui Meng"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mmeb-v3.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2604.23321v2",
+      "source_pdf_sha256": "4c6eeb6a986a577f461f2c63ef8ccdfc7155d6ac6edc4a259cbac6c5b99d034c",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 4,
+      "crop_pt": [
+        107.92,
+        81.52,
+        503.12,
+        330.32
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "rmir",
@@ -129,7 +413,29 @@
     "code_url": "",
     "section": "Universal Multimodal Retrievers",
     "summary": "Benchmarks image retrieval that requires compositional and multi-step reasoning rather than surface similarity.",
-    "framework": ["Reasoning-intensive query", "Cross-modal understanding", "Candidate reasoning and ranking", "RMIR retrieval metrics"]
+    "authors": [
+      "Yijiang Li",
+      "Kunal Kotian",
+      "Ali Marjaninejad",
+      "Meir Friedenberg",
+      "Kaushik Pavani",
+      "Sunny Dasgupta"
+    ],
+    "figure": {
+      "path": "assets/frameworks/rmir.png",
+      "source_pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_RMIR_A_Benchmark_Dataset_for_Reasoning-Intensive_Multimodal_Image_Retrieval_CVPR_2026_paper.pdf",
+      "source_pdf_sha256": "7fcfe6a514522cac345aa0f316b2125673388407fd5e169062907d5a56a0f493",
+      "figure_label": "Figure 2",
+      "figure_kind": "dataset",
+      "page": 5,
+      "crop_pt": [
+        55.6,
+        68.56,
+        556.4,
+        248.24
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "mm-embed",
@@ -140,7 +446,29 @@
     "code_url": "",
     "section": "Universal Multimodal Retrievers",
     "summary": "Turns an MLLM into a universal bi-encoder using modality-aware hard negatives and reranking.",
-    "framework": ["Multimodal query and candidates", "MLLM bi-encoder", "Modality-aware contrastive training", "Retrieval and reranking"]
+    "authors": [
+      "Sheng-Chieh Lin",
+      "Chankyu Lee",
+      "Mohammad Shoeybi",
+      "Jimmy Lin",
+      "Bryan Catanzaro",
+      "Wei Ping"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mm-embed.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2411.02571v2",
+      "source_pdf_sha256": "863b0cb36f903ecb66a04bec3be3383cb910f2961a23b9dcd280aa86fb07519e",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 3,
+      "crop_pt": [
+        114.64,
+        79.6,
+        497.36,
+        292.88
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "uniir",
@@ -151,7 +479,31 @@
     "code_url": "https://github.com/TIGER-AI-Lab/UniIR",
     "section": "Universal Multimodal Retrievers",
     "summary": "Introduces a unified multimodal retriever and the multi-task M-BEIR benchmark.",
-    "framework": ["Heterogeneous retrieval tasks", "Instruction-aware unified encoder", "Shared embedding space", "M-BEIR evaluation"]
+    "authors": [
+      "Cong Wei",
+      "Yang Chen",
+      "Haonan Chen",
+      "Hexiang Hu",
+      "Ge Zhang",
+      "Jie Fu",
+      "Alan Ritter",
+      "Wenhu Chen"
+    ],
+    "figure": {
+      "path": "assets/frameworks/uniir.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2311.17136v1",
+      "source_pdf_sha256": "f6f26900bce86a2c3461dde8652e548270301e850a6e3389a2dd548a39ff3011",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 1,
+      "crop_pt": [
+        73,
+        215,
+        540,
+        426
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "lad-rag",
@@ -162,7 +514,34 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Uses document layout to dynamically retrieve evidence from visually rich pages.",
-    "framework": ["Visually rich document", "Layout-aware parsing", "Dynamic evidence retrieval", "Grounded document answer"]
+    "authors": [
+      "Zhivar Sourati",
+      "Zheng Wang",
+      "Marianne Menglin Liu",
+      "Yazhe Hu",
+      "Mengqing Guo",
+      "Sujeeth Bharadwaj",
+      "Kyu J. Han",
+      "Tao Sheng",
+      "Sujith Ravi",
+      "Morteza Dehghani",
+      "Dan Roth"
+    ],
+    "figure": {
+      "path": "assets/frameworks/lad-rag.png",
+      "source_pdf_url": "https://aclanthology.org/2026.acl-long.724.pdf",
+      "source_pdf_sha256": "b382fb43b207170a6fcff17ae13b830d05b6abe5f17de98bfe2ca9c7f97261a4",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [
+        79.6,
+        67.6,
+        516.08,
+        249.2
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "megarag",
@@ -173,7 +552,28 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Organizes heterogeneous multimodal evidence as a knowledge graph for retrieval and generation.",
-    "framework": ["Multimodal corpus", "Knowledge-graph construction", "Graph and modality-aware retrieval", "Evidence-grounded generation"]
+    "authors": [
+      "Chi-Hsiang Hsiao",
+      "Yi-Cheng Wang",
+      "Tzung-Sheng Lin",
+      "Yi-Ren Yeh",
+      "Chu-song Chen"
+    ],
+    "figure": {
+      "path": "assets/frameworks/megarag.png",
+      "source_pdf_url": "https://aclanthology.org/2026.acl-long.2218.pdf",
+      "source_pdf_sha256": "cb5454aa11de9da9b644e79ebd6969ed0db323bd8e82408d9544a2b384a2b0b7",
+      "figure_label": "Figure 1",
+      "figure_kind": "framework",
+      "page": 3,
+      "crop_pt": [
+        104.56,
+        70.48,
+        490.16,
+        318.32
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "mdocrag-rl",
@@ -184,7 +584,24 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Applies reinforcement learning to complex visual reasoning in multimodal document RAG.",
-    "framework": ["Question and document pages", "Page and region retrieval", "RL-trained visual reasoning", "Answer with evidence"]
+    "authors": [
+      "Zhongyu Wang"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mdocrag-rl.png",
+      "source_pdf_url": "https://aclanthology.org/2026.findings-acl.420.pdf",
+      "source_pdf_sha256": "c4d818c8065eabe698362f2e0f58e31f34ee10164065e93761adb3f7b84f04b3",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [
+        67.6,
+        68.56,
+        527.12,
+        241.04
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "progressive-reranking",
@@ -195,7 +612,28 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Learns a multimodal reranker progressively through curriculum learning.",
-    "framework": ["Initial multimodal retrieval", "Easy-to-hard training curriculum", "Progressive reranker", "Top evidence for generation"]
+    "authors": [
+      "Zhu Min",
+      "Yanchao Hao",
+      "Jian Liu",
+      "Shizhu He",
+      "Xi Chen"
+    ],
+    "figure": {
+      "path": "assets/frameworks/progressive-reranking.png",
+      "source_pdf_url": "https://aclanthology.org/2026.findings-acl.2045.pdf",
+      "source_pdf_sha256": "148d596bdd3799187585b4497c26412383adc4942d5267015d773d58936174a7",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 3,
+      "crop_pt": [
+        70.96,
+        71.44,
+        520.4,
+        229.04
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "robust-visrag",
@@ -206,7 +644,29 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Improves vision-based RAG robustness under noisy and degraded document images.",
-    "framework": ["Degraded visual document", "Causality-aware representation", "Robust page retrieval", "Reliable answer generation"]
+    "authors": [
+      "I-Hsiang Chen",
+      "Yu-Wei Liu",
+      "Tse-Yu Wu",
+      "Yu-Chien Chiang",
+      "Jen-Chieh Yang",
+      "Wei-Ting Chen"
+    ],
+    "figure": {
+      "path": "assets/frameworks/robust-visrag.png",
+      "source_pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_RobustVisRAG_Causality-Aware_Vision-Based_Retrieval-Augmented_Generation_under_Visual_Degradations_CVPR_2026_paper.pdf",
+      "source_pdf_sha256": "272ec294ada34cfd1bc26e95380c4c0211d16f32061c1dedf1da652fe0912acc",
+      "figure_label": "Figure 2",
+      "figure_kind": "architecture",
+      "page": 4,
+      "crop_pt": [
+        74.8,
+        70.0,
+        503.12,
+        283.28
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "vidorag",
@@ -217,7 +677,30 @@
     "code_url": "https://github.com/Alibaba-NLP/ViDoRAG",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Coordinates Seeker, Inspector and Answer agents for iterative visual-document retrieval and verification.",
-    "framework": ["Question and document collection", "Seeker retrieves pages", "Inspector verifies and requests more evidence", "Answer agent synthesizes response"]
+    "authors": [
+      "Qiuchen Wang",
+      "Ruixue Ding",
+      "Zehui Chen",
+      "Weiqi Wu",
+      "Shihang Wang",
+      "Pengjun Xie",
+      "Feng Zhao"
+    ],
+    "figure": {
+      "path": "assets/frameworks/vidorag.png",
+      "source_pdf_url": "https://aclanthology.org/2025.emnlp-main.464.pdf",
+      "source_pdf_sha256": "fbe3096451a19f0f93f95ea2f491b6377f6ae265b124d1dc9101ad72b64d28f0",
+      "figure_label": "Figure 3",
+      "figure_kind": "framework",
+      "page": 5,
+      "crop_pt": [
+        73.84,
+        68.56,
+        521.36,
+        372.08
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "vdocrag",
@@ -228,7 +711,29 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Builds an end-to-end retrieval and generation pipeline over visually rich documents.",
-    "framework": ["Question and page collection", "Visual page retriever", "Relevant-page selection", "Multimodal answer generator"]
+    "authors": [
+      "Ryota Tanaka",
+      "Taichi Iki",
+      "Taku Hasegawa",
+      "Kyosuke Nishida",
+      "Kuniko Saito",
+      "Jun Suzuki"
+    ],
+    "figure": {
+      "path": "assets/frameworks/vdocrag.png",
+      "source_pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Tanaka_VDocRAG_Retrieval-Augmented_Generation_over_Visually-Rich_Documents_CVPR_2025_paper.pdf",
+      "source_pdf_sha256": "df512d69615197e1dc4b6fbdcec8e7863437bbf4d4fe90a9c3bd5ad7f8388ad4",
+      "figure_label": "Figure 3",
+      "figure_kind": "architecture",
+      "page": 4,
+      "crop_pt": [
+        68.56,
+        70.96,
+        540.08,
+        211.28
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "visdom",
@@ -239,7 +744,29 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Retrieves and reasons across multiple documents containing text, charts, images and layout cues.",
-    "framework": ["Multi-document collection", "Textual and visual retrieval", "Cross-document evidence fusion", "Multimodal QA"]
+    "authors": [
+      "Manan Suri",
+      "Puneet Mathur",
+      "Franck Dernoncourt",
+      "Kanika Goswami",
+      "Ryan A. Rossi",
+      "Dinesh Manocha"
+    ],
+    "figure": {
+      "path": "assets/frameworks/visdom.png",
+      "source_pdf_url": "https://aclanthology.org/2025.naacl-long.310.pdf",
+      "source_pdf_sha256": "ae5435c5cca4dd566034f0605b529ee97102c8a6bddb8dc7c002b31223c4eb41",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 5,
+      "crop_pt": [
+        67.6,
+        68.56,
+        526.16,
+        183.44
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "mmdocir",
@@ -250,7 +777,29 @@
     "code_url": "https://mmdocrag.github.io/MMDocIR/",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Benchmarks retrieval from long documents containing text and visually rich content.",
-    "framework": ["Long multimodal documents", "Query and relevance annotation", "Page / passage retrieval", "Cross-task benchmark metrics"]
+    "authors": [
+      "Kuicai Dong",
+      "Yujing Chang",
+      "Derrick Goh Xin Deik",
+      "Dexun Li",
+      "Ruiming Tang",
+      "Yong Liu"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mmdocir.png",
+      "source_pdf_url": "https://aclanthology.org/2025.emnlp-main.1576.pdf",
+      "source_pdf_sha256": "88282309c5b3ac39a7eee1259a8742006a04f7c355d51d9d888679f14fab708c",
+      "figure_label": "Figure 1",
+      "figure_kind": "benchmark",
+      "page": 1,
+      "crop_pt": [
+        68,
+        180,
+        527,
+        501
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "mmdocrag",
@@ -261,7 +810,29 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Jointly evaluates multimodal document retrieval and answer generation.",
-    "framework": ["Multimodal document QA", "Retrieval evaluation", "Evidence-conditioned generation", "End-to-end RAG evaluation"]
+    "authors": [
+      "Kuicai Dong",
+      "Yujing Chang",
+      "Shijie Huang",
+      "Yasheng Wang",
+      "Ruiming Tang",
+      "Yong Liu"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mmdocrag.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2505.16470v2",
+      "source_pdf_sha256": "73b580793f582074a18c96c1201a6436273462a2658bd538594da53cb6197392",
+      "figure_label": "Figure 3",
+      "figure_kind": "pipeline",
+      "page": 3,
+      "crop_pt": [
+        106.96,
+        70.0,
+        505.04,
+        211.28
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "reward-backprop-mrag",
@@ -272,7 +843,31 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Uses downstream generation reward to optimize the multimodal retriever end to end.",
-    "framework": ["Multimodal query", "Differentiable retrieval", "Evidence-conditioned generator", "Reward backpropagation to retriever"]
+    "authors": [
+      "Zhiyuan Fan",
+      "Longfei Yun",
+      "Ming Yan",
+      "Yumeng Wang",
+      "Dadi Guo",
+      "Brian Mak",
+      "James Kwok",
+      "Yi R. Fung"
+    ],
+    "figure": {
+      "path": "assets/frameworks/reward-backprop-mrag.png",
+      "source_pdf_url": "https://aclanthology.org/2025.findings-emnlp.24.pdf",
+      "source_pdf_sha256": "e6e879ec859b0e8ed6f3d673ff5e2710229119a0320bd94c00b4296bcc990a25",
+      "figure_label": "Figure 2",
+      "figure_kind": "architecture",
+      "page": 2,
+      "crop_pt": [
+        70.48,
+        71.44,
+        524.24,
+        326.96
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "colmate",
@@ -283,7 +878,35 @@
     "code_url": "",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Learns efficient multimodal retrieval embeddings for visually rich documents.",
-    "framework": ["Document page and query", "Multimodal page encoder", "Late / token-level interaction", "Efficient document ranking"]
+    "authors": [
+      "Ahmed Masry",
+      "Megh Thakkar",
+      "Patrice Bechard",
+      "Sathwik Tejaswi Madhusudhan",
+      "Rabiul Awal",
+      "Shambhavi Mishra",
+      "Akshay Kalkunte Suresh",
+      "Srivatsava Daruru",
+      "Enamul Hoque",
+      "Spandana Gella",
+      "Torsten Scholak",
+      "Sai Rajeswar"
+    ],
+    "figure": {
+      "path": "assets/frameworks/colmate.png",
+      "source_pdf_url": "https://aclanthology.org/2025.emnlp-industry.145.pdf",
+      "source_pdf_sha256": "cdb9a5105e4e232dacf37e52f0870ca890e2c915c7920e522b51af0880a3e555",
+      "figure_label": "Figure 1",
+      "figure_kind": "architecture",
+      "page": 2,
+      "crop_pt": [
+        72.88,
+        74.32,
+        522.32,
+        184.4
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   {
     "id": "visrag",
@@ -294,7 +917,34 @@
     "code_url": "https://github.com/openbmb/visrag",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Retrieves directly over document-page images to preserve layout and visual information lost by OCR pipelines.",
-    "framework": ["Document page images", "Vision-language page embedding", "Page-image retrieval", "VLM answer generation"]
+    "authors": [
+      "Shi Yu",
+      "Chaoyue Tang",
+      "Bokai Xu",
+      "Junbo Cui",
+      "Junhao Ran",
+      "Yukun Yan",
+      "Zhenghao Liu",
+      "Shuo Wang",
+      "Xu Han",
+      "Zhiyuan Liu",
+      "Maosong Sun"
+    ],
+    "figure": {
+      "path": "assets/frameworks/visrag.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2410.10594v2",
+      "source_pdf_sha256": "1b952e416611b4e0d076ace1d94d74730585409cc53c405db0e6fe9da9d16269",
+      "figure_label": "Figure 2",
+      "figure_kind": "pipeline",
+      "page": 4,
+      "crop_pt": [
+        106.0,
+        78.64,
+        506.0,
+        255.44
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "colpali",
@@ -305,7 +955,30 @@
     "code_url": "https://github.com/illuin-tech/colpali",
     "section": "Visual Document Retrieval and RAG",
     "summary": "Represents page screenshots with VLM patch embeddings and ranks them using late interaction.",
-    "framework": ["Query and page screenshot", "PaliGemma-derived encoders", "Multi-vector late interaction", "Page ranking"]
+    "authors": [
+      "Manuel Faysse",
+      "Hugues Sibille",
+      "Tony Wu",
+      "Bilel Omrani",
+      "Gautier Viaud",
+      "Céline Hudelot",
+      "Pierre Colombo"
+    ],
+    "figure": {
+      "path": "assets/frameworks/colpali.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2407.01449v6",
+      "source_pdf_sha256": "852ec724f3d48316265611579f4c556a14fea24f29360b5929d02e4604662631",
+      "figure_label": "Figure 1",
+      "figure_kind": "overview",
+      "page": 2,
+      "crop_pt": [
+        114.64,
+        78.64,
+        497.36,
+        313.04
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "mc-search",
@@ -316,7 +989,33 @@
     "code_url": "https://mc-search-project.github.io/",
     "section": "Agentic Multimodal Search",
     "summary": "Introduces structured long reasoning chains for evaluating and improving multimodal agentic search.",
-    "framework": ["Complex multimodal question", "Plan search trajectory", "Iterative tool search and evidence reading", "Structured reasoning and final answer"]
+    "authors": [
+      "Xuying Ning",
+      "Dongqi Fu",
+      "Tianxin Wei",
+      "Mengting Ai",
+      "Jiaru Zou",
+      "Ting-Wei Li",
+      "Hanghang Tong",
+      "Yada Zhu",
+      "Hendrik Hamann",
+      "Jingrui He"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mc-search.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2603.00873v1",
+      "source_pdf_sha256": "552f9264cfef79808dc9c0d5fef7bc342a391eb972487a988b44a5bd07ab9728",
+      "figure_label": "Figure 2",
+      "figure_kind": "benchmark",
+      "page": 3,
+      "crop_pt": [
+        115.6,
+        79.6,
+        496.4,
+        301.04
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "mmsearch-plus",
@@ -327,7 +1026,33 @@
     "code_url": "https://github.com/mmsearch-plus/MMSearch-Plus",
     "section": "Agentic Multimodal Search",
     "summary": "Evaluates iterative text-image browsing, answer accuracy and provenance verification.",
-    "framework": ["Multimodal browsing task", "Iterative text and image search", "Source inspection and provenance check", "Answer with verifiable evidence"]
+    "authors": [
+      "Xijia Tao",
+      "Yihua Teng",
+      "Xinxing Su",
+      "Xinyu Fu",
+      "Jihao Wu",
+      "Chaofan Tao",
+      "Ziru Liu",
+      "Haoli Bai",
+      "Rui Liu",
+      "Lingpeng Kong"
+    ],
+    "figure": {
+      "path": "assets/frameworks/mmsearch-plus.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2508.21475v3",
+      "source_pdf_sha256": "9e55814d6f1fc9fae00730d572731ac9da75aa72b07cd80d3d2be83d0a562dd5",
+      "figure_label": "Figure 1",
+      "figure_kind": "framework",
+      "page": 2,
+      "crop_pt": [
+        104.56,
+        80.56,
+        506.0,
+        298.16
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "reason-before-retrieve",
@@ -338,7 +1063,28 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Models user intent before retrieval and maintains a structured KnowledgeMap for subsequent search.",
-    "framework": ["Multimodal request", "Intent-grounded planning", "KnowledgeMap-guided retrieval", "Evidence synthesis and response"]
+    "authors": [
+      "Tianyu Yang",
+      "Shir Simon",
+      "Zhenzhen Li",
+      "Minhao Cheng",
+      "Xiangliang Zhang"
+    ],
+    "figure": {
+      "path": "assets/frameworks/reason-before-retrieve.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2607.22643v1",
+      "source_pdf_sha256": "e6052724f4d3a54cca974ac76e37b4773fbd1fae982a79c64d4b7a8ff4d0064f",
+      "figure_label": "Figure 1",
+      "figure_kind": "pipeline",
+      "page": 2,
+      "crop_pt": [
+        106.0,
+        78.64,
+        506.0,
+        283.28
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "v-retrver",
@@ -349,7 +1095,32 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Uses evidence-driven agent reasoning to solve universal multimodal retrieval tasks.",
-    "framework": ["Multimodal retrieval request", "Agent decomposes evidence needs", "Evidence-driven search and reasoning", "Universal candidate ranking"]
+    "authors": [
+      "Dongyang Chen",
+      "Chaoyang Wang",
+      "Dezhao Su",
+      "Xi Xiao",
+      "Zeyu Zhang",
+      "Jing Xiong",
+      "Qing Li",
+      "Yuzhang Shang",
+      "Shichao Kan"
+    ],
+    "figure": {
+      "path": "assets/frameworks/v-retrver.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2602.06034v4",
+      "source_pdf_sha256": "c246fff7bc35404cb7085bb98ddaad22a35cfb5459501d56ed2ccab6da57a407",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [
+        69.04,
+        72.88,
+        526.16,
+        282.8
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "deep-image-search",
@@ -360,7 +1131,36 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Benchmarks agents that retrieve images by reasoning over long visual histories and context.",
-    "framework": ["Query and visual history", "Context reconstruction", "Agentic image search", "Context-aware retrieval evaluation"]
+    "authors": [
+      "Chenlong Deng",
+      "Mengjie Deng",
+      "Junjie Wu",
+      "Dun Zeng",
+      "Teng Wang",
+      "Qingsong Xie",
+      "Jiadeng Huang",
+      "Shengjie Ma",
+      "Changwang Zhang",
+      "Zhaoxiang Wang",
+      "Jun Wang",
+      "Yutao Zhu",
+      "Zhicheng Dou"
+    ],
+    "figure": {
+      "path": "assets/frameworks/deep-image-search.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2602.10809v2",
+      "source_pdf_sha256": "b45b8d96871b411c2efc341fd370c4c2cfb723186c4c02c680fbdabd5252fb08",
+      "figure_label": "Figure 3",
+      "figure_kind": "dataset",
+      "page": 5,
+      "crop_pt": [
+        52.72,
+        64.72,
+        544.4,
+        290.0
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "weagent-mmsearch",
@@ -371,7 +1171,33 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Studies native text-vision interaction and visual-target localization for multimodal search agents.",
-    "framework": ["Text-vision search request", "Native multimodal observation", "Interactive search actions", "Target grounding and response"]
+    "authors": [
+      "Zongkai Liu",
+      "Hui Zhang",
+      "Liqiang Niu",
+      "Zhen Cao",
+      "Han Li",
+      "Juntao Liu",
+      "Wenchao Chen",
+      "Chengduo Zhao",
+      "Chao Yu",
+      "Fandong Meng"
+    ],
+    "figure": {
+      "path": "assets/frameworks/weagent-mmsearch.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2608.28062v2",
+      "source_pdf_sha256": "b09a5717482d06f57361d13061d6088bea0252128e5fc23b32de094186d4458d",
+      "figure_label": "Figure 3",
+      "figure_kind": "architecture",
+      "page": 5,
+      "crop_pt": [
+        70.0,
+        78.64,
+        542.0,
+        326.48
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "fix-before-search",
@@ -382,7 +1208,30 @@
     "code_url": "https://github.com/phycholosogy/VQQP_Bench",
     "section": "Agentic Multimodal Search",
     "summary": "Benchmarks agents that repair, crop and enhance visual queries before retrieval.",
-    "framework": ["Noisy visual query", "Agent chooses preprocessing actions", "Enhanced-query retrieval", "RAG answer and VQQP evaluation"]
+    "authors": [
+      "Shenglai Zeng",
+      "Jiankun Zhang",
+      "Kai Guo",
+      "Xinnan Dai",
+      "Hui Liu",
+      "Jiliang Tang",
+      "Yi Chang"
+    ],
+    "figure": {
+      "path": "assets/frameworks/fix-before-search.png",
+      "source_pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zeng26w/zeng26w.pdf",
+      "source_pdf_sha256": "efc73fcd39dd72758a3761d842b9eebe9e5aea9e512eff817dddfc3c15419a1e",
+      "figure_label": "Figure 1",
+      "figure_kind": "pipeline",
+      "page": 1,
+      "crop_pt": [
+        307.6,
+        193.36,
+        541.04,
+        352.4
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "vld-rag",
@@ -393,7 +1242,24 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Uses an agentic vision-language pipeline to retrieve and reason over long multi-page documents.",
-    "framework": ["Question and long document", "Agent plans page exploration", "Iterative visual evidence retrieval", "Cross-page answer synthesis"]
+    "authors": [
+      "Seonok Kim"
+    ],
+    "figure": {
+      "path": "assets/frameworks/vld-rag.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2607.24748v1",
+      "source_pdf_sha256": "91a119ff7e48f245b51b0f55f19dcca1f82844d02adb233e3657d683691aada7",
+      "figure_label": "Figure 1",
+      "figure_kind": "framework",
+      "page": 2,
+      "crop_pt": [
+        68.56,
+        75.76,
+        532.4,
+        443.12
+      ],
+      "license_url": null
+    }
   },
   {
     "id": "collex",
@@ -404,6 +1270,28 @@
     "code_url": "",
     "section": "Agentic Multimodal Search",
     "summary": "Supports interactive exploration of scientific collections using multimodal agentic RAG.",
-    "framework": ["Scientific multimodal collection", "Interactive user intent", "Agentic retrieval and exploration", "Grounded conversational response"]
+    "authors": [
+      "Florian Schneider",
+      "Narges Baba Ahmadi",
+      "Niloufar Baba Ahmadi",
+      "Iris Vogel",
+      "Martin Semmann",
+      "Chris Biemann"
+    ],
+    "figure": {
+      "path": "assets/frameworks/collex.png",
+      "source_pdf_url": "https://aclanthology.org/2025.magmar-1.2.pdf",
+      "source_pdf_sha256": "4ee6b48eb1579160529f56ecb4df7229b5f3b01ab5124f5470c1340708f6181f",
+      "figure_label": "Figure 4",
+      "figure_kind": "architecture",
+      "page": 3,
+      "crop_pt": [
+        305.68,
+        577.84,
+        525.2,
+        704.24
+      ],
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   }
 ]

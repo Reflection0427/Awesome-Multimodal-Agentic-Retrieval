@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Move one reviewed candidate into the curated paper list."""
+"""Move one reviewed candidate into the curated list with an original paper figure."""
 
 from __future__ import annotations
 
@@ -9,6 +9,8 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+
+import generate_readme
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,38 +23,77 @@ def slug(text: str) -> str:
     return value[:70].rstrip("-")
 
 
+def crop_coordinates(value: str) -> list[float]:
+    try:
+        coordinates = [float(item.strip()) for item in value.split(",")]
+    except ValueError as error:
+        raise argparse.ArgumentTypeError("crop must contain four comma-separated numbers") from error
+    if len(coordinates) != 4 or coordinates[0] >= coordinates[2] or coordinates[1] >= coordinates[3]:
+        raise argparse.ArgumentTypeError("crop must be x0,y0,x1,y1 with positive width and height")
+    return coordinates
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Accept a human-reviewed paper candidate")
     parser.add_argument("query", help="unique title substring")
-    parser.add_argument("--section", required=True)
+    parser.add_argument("--section", required=True, choices=generate_readme.SECTION_ORDER)
     parser.add_argument("--summary", required=True)
-    parser.add_argument("--framework", action="append", required=True, help="repeat 3-5 times")
+    parser.add_argument("--author", action="append", required=True, help="repeat once per author, in paper order")
+    parser.add_argument("--year", type=int, help="override or supply the publication year")
+    parser.add_argument("--venue", help="override or supply the verified venue")
     parser.add_argument("--code-url", default="")
+    parser.add_argument("--source-pdf-url", required=True, help="pinned official PDF URL")
+    parser.add_argument("--source-pdf-sha256", required=True)
+    parser.add_argument("--figure-label", required=True, help='for example "Figure 2"')
+    parser.add_argument("--figure-kind", required=True, choices=sorted(generate_readme.FIGURE_KINDS))
+    parser.add_argument("--figure-page", required=True, type=int, help="one-based PDF page number")
+    parser.add_argument("--figure-crop", required=True, type=crop_coordinates, help="x0,y0,x1,y1 in PDF points")
+    parser.add_argument("--license-url", default=None)
     args = parser.parse_args()
-    if not 3 <= len(args.framework) <= 5:
-        parser.error("--framework must be supplied 3-5 times")
+    if not re.fullmatch(r"[0-9a-f]{64}", args.source_pdf_sha256.lower()):
+        parser.error("--source-pdf-sha256 must be 64 hexadecimal characters")
+    if not args.figure_label.startswith("Figure "):
+        parser.error('--figure-label must start with "Figure "')
+
     papers = json.loads(PAPERS.read_text(encoding="utf-8"))
     candidates = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     matches = [row for row in candidates if args.query.lower() in row["title"].lower()]
     if len(matches) != 1:
         parser.error(f"expected exactly one match, found {len(matches)}")
     candidate = matches[0]
+    paper_id = slug(candidate["title"])
+    if any(paper["id"] == paper_id for paper in papers):
+        parser.error(f"paper id already exists: {paper_id}")
     year_match = re.search(r"20\d{2}", candidate.get("published", ""))
+    year = args.year or (int(year_match.group()) if year_match else 0)
+    if not 2022 <= year <= 2100:
+        parser.error("a valid --year is required when the candidate has no publication year")
     paper = {
-        "id": slug(candidate["title"]),
+        "id": paper_id,
         "title": candidate["title"],
-        "year": int(year_match.group()) if year_match else 0,
-        "venue": candidate.get("venue") or "To appear",
+        "year": year,
+        "venue": args.venue or candidate.get("venue") or "To appear",
         "paper_url": candidate["paper_url"],
         "code_url": args.code_url,
         "section": args.section,
         "summary": args.summary,
-        "framework": args.framework,
+        "authors": args.author,
+        "figure": {
+            "path": f"assets/frameworks/{paper_id}.png",
+            "source_pdf_url": args.source_pdf_url,
+            "source_pdf_sha256": args.source_pdf_sha256.lower(),
+            "figure_label": args.figure_label,
+            "figure_kind": args.figure_kind,
+            "page": args.figure_page,
+            "crop_pt": args.figure_crop,
+            "license_url": args.license_url,
+        },
     }
     papers.append(paper)
     candidates.remove(candidate)
     PAPERS.write_text(json.dumps(papers, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     CANDIDATES.write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "extract_figure.py"), "--paper-id", paper_id], check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "generate_readme.py")], check=True)
     print(f"Accepted: {paper['title']}")
     return 0
